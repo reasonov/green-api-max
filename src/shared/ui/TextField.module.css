@@ -1,0 +1,29 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.label {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-input);
+}
+
+.input::placeholder {
+  color: var(--text-secondary);
+}
+
+.error {
+  color: var(--danger);
+  font-size: 13px;
+}

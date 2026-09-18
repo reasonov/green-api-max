@@ -1,0 +1,48 @@
+.conversation {
+  display: flex;
+  min-width: 0;
+  min-height: 0;
+  flex: 1;
+  flex-direction: column;
+  background:
+    radial-gradient(circle at top right, rgba(61, 139, 255, 0.08), transparent 36%),
+    var(--bg-chat);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 64px;
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-sidebar);
+}
+
+.meta {
+  min-width: 0;
+}
+
+.meta h2 {
+  margin: 0;
+  overflow: hidden;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.meta p {
+  margin: 2px 0 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.back {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .back {
+    display: inline-flex;
+  }
+}

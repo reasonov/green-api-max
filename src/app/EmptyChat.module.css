@@ -1,0 +1,25 @@
+.empty {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 24px;
+  color: var(--text-secondary);
+  text-align: center;
+  background: var(--bg-chat);
+}
+
+.empty h2 {
+  margin: 12px 0 0;
+  color: var(--text-primary);
+  font-size: 22px;
+  font-weight: 650;
+}
+
+.empty p {
+  margin: 0;
+  max-width: 360px;
+  line-height: 1.45;
+}

@@ -1,0 +1,47 @@
+.form {
+  padding: 8px 16px 16px;
+}
+
+.row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 8px 8px 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-input);
+}
+
+.input {
+  flex: 1;
+  max-height: 140px;
+  padding: 8px 0;
+  border: 0;
+  background: transparent;
+  resize: none;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-secondary);
+}
+
+.error {
+  margin: 0 0 8px;
+  color: var(--danger);
+  font-size: 13px;
+}
+
+.send {
+  background: var(--accent);
+  color: var(--text-on-accent);
+}
+
+.send:hover:not(:disabled) {
+  background: var(--accent-hover);
+  color: var(--text-on-accent);
+}
+
+.send:disabled {
+  opacity: 0.45;
+}
