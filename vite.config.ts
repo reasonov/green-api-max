@@ -5,6 +5,6 @@ export default defineConfig({
   base: './',
   plugins: [react()],
   test: {
-    environment: 'jsdom',
+    environment: 'node',
   },
 })
